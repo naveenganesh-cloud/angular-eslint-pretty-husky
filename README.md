@@ -1,59 +1,77 @@
 # AngularEslintPrettyHusky
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
 
-## Development server
+## Getting Started
 
-To start a local development server, run:
+### Development Server
+
+Start the local development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at [http://localhost:4200/](http://localhost:4200/). The app reloads automatically when you modify source files.
 
-## Code scaffolding
+### Code Generation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Generate a new component:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+For more schematics (components, directives, pipes, etc.):
 
 ```bash
 ng generate --help
 ```
 
-## Building
+### Building the Project
 
-To build the project run:
+Build the project:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Build artifacts are stored in the `dist/` directory. Production builds are optimized for performance.
 
-## Running unit tests
+### Running Unit Tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Run unit tests with [Karma](https://karma-runner.github.io):
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+### Running End-to-End Tests
 
-For end-to-end (e2e) testing, run:
+Run end-to-end (e2e) tests:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> Note: Angular CLI does not include an e2e testing framework by default. Choose one that fits your requirements.
 
-## Additional Resources
+## Linting Setup
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Install ESLint:
+
+```bash
+npm i eslint --save-dev
+```
+
+Run linting:
+
+```bash
+ng lint
+```
+
+> When prompted, confirm to add Angular lint support by typing `y` and pressing Enter.
+
+## Resources
+
+- [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
