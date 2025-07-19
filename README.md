@@ -72,6 +72,16 @@ ng lint
 
 > When prompted, confirm to add Angular lint support by typing `y` and pressing Enter.
 
+## TypeScript Configuration
+
+The `lib` property is added in `tsconfig.json`:
+
+```jsonc
+"lib": ["ES2022", "DOM"]
+```
+
+This enables modern JavaScript features and browser APIs in your Angular project.
+
 ## Resources
 
 - [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
