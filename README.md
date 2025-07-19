@@ -72,6 +72,56 @@ ng lint
 
 > When prompted, confirm to add Angular lint support by typing `y` and pressing Enter.
 
+## Prettier Integration
+
+Install Prettier and its ESLint plugins:
+
+```bash
+npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+Add Prettier configuration (optional):
+
+```json
+// .prettierrc
+{
+  "singleQuote": true,
+  "semi": true
+}
+```
+
+Update your ESLint config to include Prettier (see `eslint.config.js`):
+
+```javascript
+// ...existing code...
+extends: [
+  // other configs,
+  eslintConfigPrettier,
+],
+plugins: {
+  prettier: prettier,
+},
+rules: {
+  // other rules,
+  "prettier/prettier": "error"
+}
+// ...existing code...
+```
+
+## Checking and Formatting Code
+
+Check formatting for all files (including untracked):
+
+```bash
+npx prettier --check .
+```
+
+Format all files:
+
+```bash
+npx prettier --write .
+```
+
 ## TypeScript Configuration
 
 The `lib` property is added in `tsconfig.json`:
@@ -85,3 +135,5 @@ This enables modern JavaScript features and browser APIs in your Angular project
 ## Resources
 
 - [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli)
+- [Prettier Documentation](https://prettier.io/docs/en/index.html)
+- [ESLint Documentation](https://eslint.org/docs/latest/)
